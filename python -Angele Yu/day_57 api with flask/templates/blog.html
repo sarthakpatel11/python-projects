@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogger</title>
+</head>
+
+<body>
+    {% for i in range(0,3) %}
+    <h1>Blog {{ id[i] }}</h1>
+    <h2>Subject : {{ subject[i] }} </h2>
+    <a href="{{ url_for('get_blog', num=i) }}">Go to blog</a>
+    {% endfor %}
+</body>
+
+</html>
