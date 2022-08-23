@@ -1,6 +1,3 @@
-# spreadsheetId = "1C562zarWY2U5Q8IVcP9mm9ZsvOAJ5McuywrVx4U6SwY"
-
-
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from pprint import pprint
