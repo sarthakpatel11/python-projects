@@ -8,7 +8,7 @@ chrome_driver_path = (
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 driver.maximize_window()
 URL = "https://web.telegram.org/k/"
-NUMBER = "9510893614"
+NUMBER = "number"
 driver.get(URL)
 time.sleep(10)
 phone_button = driver.find_element_by_css_selector("div .c-ripple")
