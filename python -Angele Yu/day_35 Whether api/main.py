@@ -6,16 +6,16 @@ import requests
 # constants --------------
 latitude = "22"
 longitude = "70"
-api_key = "7c19bd55858eb908ed5139063cafa7bd"
-api_endpoint = "https://api.openweathermap.org/data/2.5/onecall"
+api_key = key
+api_endpoint = api
 whether = {
     "lat": "22.23",
     "lon": "70.89",
     "appid":  api_key,
     "exclude": "current,minutely,daily"
 }
-ACCOUNT_SID = "AC8345a06edcc68565c93350d74d49a01d"
-AUTH_TOKEN = "acfbcd02721dd89270494fa281c43d1a"
+ACCOUNT_SID = sid
+AUTH_TOKEN =token
 will_rain = False
 #
 res = requests.get(api_endpoint, params=whether)
@@ -34,9 +34,7 @@ if will_rain:
 
 
 # Find your Account SID and Auth Token at twilio.com/console
-# and set the environment variables. See http://twil.io/secure
-account_sid = os.environ['AC8345a06edcc68565c93350d74d49a01d']
-auth_token = os.environ['acfbcd02721dd89270494fa281c43d1a']
+# and set the environment variables. 
 client = Client(account_sid, auth_token)
 
 message = client.messages \
