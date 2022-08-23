@@ -19,7 +19,7 @@ app = Flask(__name__)
 blog_id = []
 blog_subject = []
 blog_data = []
-blog_url = "https://api.npoint.io/2f4b06c09e2e8a7da5a8"
+blog_url = "https://api.npoint.io/"
 res = requests.get(url=blog_url)
 blog = res.json()
 for i in range(0, 3):
