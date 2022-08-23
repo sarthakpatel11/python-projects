@@ -7,9 +7,9 @@ from typing import ItemsView
 flight_date = ""
 flight_price = ""
 
-AFFILATE_ID = "fotase8070ovooovoovooovo"
+AFFILATE_ID = id
 header = {
-    "apikey": "R7CWW7Sj1SE3mga0iXo64ciTmgU2FZ9Z",
+    "apikey": "apikey",
 }
 params = {
     "fly_from": flight_from,
@@ -17,7 +17,7 @@ params = {
     "date_from": str(today_date),
     "date_to": str(six_month_date),
 }
-url = "https://tequila-api.kiwi.com/aggregation_search/price_per_date?"
+url = "https://tequila-api.kiwi.com/aggregation_search/?"
 
 response = requests.get(url=url, headers=header, params=params)
 json = response.json()
@@ -31,9 +31,9 @@ for i in range(0, len(json_data)):
         flight_price += f"{json_data[i]['price']}, "
 
 if flight_price[0] != "":
-    sender_email = "mastimajaknahikarva@gmail.com"
-    password = "M@stiM@j@K1"
-    resever_email = "2maxjohnny292@gmail.com"
+    sender_email = "email"
+    password = "pass"
+    resever_email = "email"
     msg = f"Subject:Chepest Flight\n\nWe have find some date for chepeast price rate for flight\nFrom : {flight_from}\nto : {flight_to}\ndate : {flight_date}\nprice : {flight_price}\nfor more info call 911"
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
