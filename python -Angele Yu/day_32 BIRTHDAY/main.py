@@ -1,12 +1,12 @@
 # import smtplib
 
-# my_email = "mastimajaknahikarva@gmail.com"
-# password = "M@stiM@j@K1"
+# my_email = your email
+# password = password
 # with smtplib.SMTP("smtp.gmail.com") as connection:
 #     connection.starttls()
 #     connection.login(user=my_email, password=password)
 #     connection.sendmail(from_addr=my_email,
-#                         to_addrs="2maxjohnny292@gmail.com", msg="Subject:Hello\n\nThis is body of mail.")
+#                         to_addrs=victim email, msg="Subject:Hello\n\nThis is body of mail.")
 #     connection.close()
 
 # import datetime as dt
@@ -31,8 +31,8 @@ import pandas as pd
 import random
 
 # constants ----------------------
-sender_email = "mastimajaknahikarva@gmail.com"
-password = "M@stiM@j@K1"
+sender_email = your mail
+password = pass
 date_of_birth = []
 month_of_birth = []
 PLACEHOLDER = "[name]"
