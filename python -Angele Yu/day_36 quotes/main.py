@@ -1,13 +1,13 @@
 import requests
 import random
 
-url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete"
+url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/"
 
 querystring = {"q": "tesla", "region": "US"}
 
 headers = {
-    'x-rapidapi-key': "03cbef3edbmsh7b456eed84f8735p1f2af2jsn5599d2316da4",
-    'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
+    'x-rapidapi-key': "your key",
+    'x-rapidapi-host': "your host"
 }
 
 response = requests.get(url, headers=headers, params=querystring)
