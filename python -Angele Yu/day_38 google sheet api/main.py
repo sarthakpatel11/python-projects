@@ -1,6 +1,3 @@
-# spreadsheetId = "1C562zarWY2U5Q8IVcP9mm9ZsvOAJ5McuywrVx4U6SwY"
-
-
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from pprint import pprint
@@ -14,8 +11,6 @@ creds = ServiceAccountCredentials.from_json_keyfile_name(
 client = gspread.authorize(creds)
 
 sheet = client.open("test").sheet1  # Open the spreadhseet
-# sheet = client.open_by_url(
-#     'https://docs.google.com/spreadsheets/d/1C562zarWY2U5Q8IVcP9mm9ZsvOAJ5McuywrVx4U6SwY').sheet1
 
 # Get a list of all records
 # print(data)
