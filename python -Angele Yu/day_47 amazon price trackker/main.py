@@ -35,9 +35,9 @@ data = response.text
 
 def send_mail():
     with smtplib.SMTP("smtp.gmail.com") as connection:
-        sender_email = "mastimajaknahikarva@gmail.com"
-        password = "M@stiM@j@K1"
-        resever_email = "2maxjohnny292@gmail.com"
+        sender_email = "mail"
+        password = "pass"
+        resever_email = "mail"
         msg = "Subject:Iphonr XR is at cheapest price.\n\nI think need to chang your phone plz visit the filpkart moblie section."+URL_FLIPKART_IPHONE_XR
         connection.starttls()
         connection.login(user=sender_email, password=password)
